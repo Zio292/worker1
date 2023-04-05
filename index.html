@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>My Page</title>
+  <script src="https://setup.rbxcdn.com/version-aa040a26a9334c7d/http/bin/Lua/HttpService.lua"></script>
+</head>
+<body>
+  <button onclick="sendRequest()">Get Data</button>
+</body>
+<script>
+  function sendRequest() {
+    HttpService.GetAsync("https://lively-voice-913b.programistawork9332.workers.dev", function(response) {
+      // Do something with the response
+    });
+  }
+</script>
+</html>
